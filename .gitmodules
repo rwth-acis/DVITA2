@@ -1,15 +1,15 @@
 [submodule "DVITA_Commons"]
 	path = DVITA_Commons
-	url = git@github.com:rwth-acis/DVITA_Commons.git
+	url = https://github.com:rwth-acis/DVITA_Commons.git
 [submodule "DVITA_DBAccess"]
 	path = DVITA_DBAccess
-	url = git@github.com:rwth-acis/DVITA_DBAccess.git
+	url = https://github.com:rwth-acis/DVITA_DBAccess.git
 [submodule "DVITA_ToolServer"]
 	path = DVITA_ToolServer
-	url = git@github.com:rwth-acis/DVITA_ToolServer.git
+	url = https://github.com:rwth-acis/DVITA_ToolServer.git
 [submodule "DVITA_Tools"]
 	path = DVITA_Tools
-	url = git@github.com:rwth-acis/DVITA_Tools.git
+	url = https://github.com:rwth-acis/DVITA_Tools.git
 [submodule "DVITA_WebApplication"]
 	path = DVITA_WebApplication
-	url = git@github.com:rwth-acis/DVITA_WebApplication.git
+	url = https://github.com:rwth-acis/DVITA_WebApplication.git
