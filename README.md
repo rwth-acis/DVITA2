@@ -21,7 +21,7 @@ For Eclipse 4.3:
 Now import the folder containing all the individual projects in your Eclipse workspace (`File > Import > General > Existing projects into workspace`)
 
 ##Set up D-VITA Database
-D-VITA needs a config file dvita_config.txt --- Create a file dvita_config.txt (the example values below are for a mysql database, adapt them to your needs by replacing the fake values with real values):
+The D-VITA Web app needs a config file dvita_config.txt residing in the app's WEB-INF folder --- Create a file dvita_config.txt (the example values below are for a mysql database, adapt them to your needs by replacing the fake values with real values):
 
 ```
 server=honolulu
@@ -157,7 +157,7 @@ Build DVITA_WebApplication: right click > Google > GWT Compile. Click Compile. A
 If there are any strange errors during runtime, it is likely because the exported JAR files of DBAccess and Commons in the lib folders of dependent projects are out of date. If this is the case, export those as JAR and copy them to the lib folders. This needs to be done after every change and rebuild of Commons and/or DBAccess. You could also write a build script that performs this automatically. So far no one got around to do that.
 
 ##Launching D-VITA web app locally
-Put the dvita_config.txt in the DVITA_WebApplication/war folder. Make sure to put correct username and database there.
+Put the dvita_config.txt in the DVITA_WebApplication/war/WEB-INF folder. Make sure to put correct username and database there.
 
 Make sure Chrome is your default browser; will ask you to install GWT Developer extension if not installed yet.
 
@@ -198,8 +198,8 @@ Run DTS.jar as background process:
 
 You need a tomcat server running.
 
-dvita_config.txt must be available in the application folder on the tomcat server, currently: 
-`/[PATH TO TOMCAT]/webapps/[DEPLOY NAME]/dvita_config.txt`
+dvita_config.txt must be available in the WEB-INF folder under the application folder on the tomcat server, i.e.: 
+`/[PATH TO TOMCAT]/webapps/[DEPLOY NAME]/WEB-INF/dvita_config.txt`
 
 Compile:
 * Rightclick the DVITA project > Google > GWT compile
