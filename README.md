@@ -1,5 +1,7 @@
 
-#A Web-Based Dynamic Visual Topic Analytics Toolkit 
+#A Web-Based Dynamic Visual Topic Analytics Toolkit -- DVITA2
+
+This is an experimental, enhanced version of [DVITA1](https://github.com/rwth-acis/DVITA1), which is maintained separately and more stable.
 
 The following stepwise documentation has grown over time, not all of it might work out of the box. If you find incorrect info, please suggest improvements.
 
@@ -235,6 +237,6 @@ Don't forget the OpenID return URL in dvita_config.txt needs to point to the dep
 
 This branch of D-VITA is quite experimental. The only publicly deployed version is available at http://monet.informatik.rwth-aachen.de/DVita2, which is mostly used for research purposes, not stable, and you will not find many topic models there. But it includes the new control panel GUI and tool server backend to conveniently build the topic models.
 
-A stable, earlier release of D-VITA is deployed at http://monet.informatik.rwth-aachen.de/DVita. This earlier release does not feature the control panel GUI, and the code is not yet publicly available. However, there are many publicly available topic models avaialable to explore.
+A stable, earlier release of D-VITA is deployed at http://monet.informatik.rwth-aachen.de/DVita ([GitHub repo here](https://github.com/rwth-acis/DVITA1)). This earlier release does not feature the control panel GUI, and the code is not yet publicly available. However, there are many publicly available topic models avaialable to explore.
 
 Please go see http://dbis.rwth-aachen.de/cms/research/ACIS/D-VITA for more information and contact details for D-VITA.
