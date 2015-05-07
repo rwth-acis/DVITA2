@@ -4,7 +4,12 @@
 The following stepwise documentation has grown over time, not all of it might work out of the box. If you find incorrect info, please suggest improvements.
 
 ##Clone repositories
-Do NOT clone this module, since it often points to outdated commits of the submodules. Instead, create a folder on your machine and clone all submodules individually there.
+Do NOT clone this module. Instead, create a folder on your machine and clone the following modules that belong to D-VITA2:
+* [DVITA_Commons](https://github.com/rwth-acis/DVITA_Commons)
+* [DVITA_DBAccess](https://github.com/rwth-acis/DVITA_DBAccess)
+* [DVITA_ToolServer](https://github.com/rwth-acis/DVITA_ToolServer)
+* [DVITA_Tools](https://github.com/rwth-acis/DVITA_Tools)
+* [DVITA_WebApplication](https://github.com/rwth-acis/DVITA_WebApplication)
 
 ##Eclipse
 If not already on your computer, download Eclipse IDE for Java Developers from http://www.eclipse.org/downloads/ 
