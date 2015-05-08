@@ -5,14 +5,6 @@ This is an experimental, enhanced version of [DVITA1](https://github.com/rwth-ac
 
 The following stepwise documentation has grown over time, not all of it might work out of the box. If you find incorrect info, please suggest improvements.
 
-##Clone repositories
-Do NOT clone this module. Instead, create a folder on your machine and clone the following modules that belong to D-VITA2:
-* [DVITA_Commons](https://github.com/rwth-acis/DVITA_Commons)
-* [DVITA_DBAccess](https://github.com/rwth-acis/DVITA_DBAccess)
-* [DVITA_ToolServer](https://github.com/rwth-acis/DVITA_ToolServer)
-* [DVITA_Tools](https://github.com/rwth-acis/DVITA_Tools)
-* [DVITA_WebApplication](https://github.com/rwth-acis/DVITA_WebApplication)
-
 ##Eclipse
 If not already on your computer, download Eclipse IDE for Java Developers from http://www.eclipse.org/downloads/ 
 These instructions were made with version 4.3.2 (Kepler), ran with JRE 7 on x86.
