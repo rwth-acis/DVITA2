@@ -1,0 +1,2 @@
+serviceClass: i5.dvita.webapplication.client.WordService
+path: 8F4D3445FB5D91EC74DACFA41F9405AF.gwt.rpc

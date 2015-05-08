@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee; 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+<servlet>
+    <servlet-name>topicServlet</servlet-name>
+    <servlet-class>i5.dvita.webapplication.server.TopicServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>topicServlet</servlet-name>
+    <url-pattern>/dvita_webapplication/topic</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>documentServlet</servlet-name>
+    <servlet-class>i5.dvita.webapplication.server.DocumentServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>documentServlet</servlet-name>
+    <url-pattern>/dvita_webapplication/document</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>wordServlet</servlet-name>
+    <servlet-class>i5.dvita.webapplication.server.WordServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>wordServlet</servlet-name>
+    <url-pattern>/dvita_webapplication/word</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>setupServlet</servlet-name>
+    <servlet-class>i5.dvita.webapplication.server.SetupServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>setupServlet</servlet-name>
+    <url-pattern>/dvita_webapplication/setup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>controlPanelServlet</servlet-name>
+    <servlet-class>i5.dvita.webapplication.server.ControlPanelServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>controlPanelServlet</servlet-name>
+    <url-pattern>/dvita_webapplication/controlPanel</url-pattern>
+  </servlet-mapping>
+  <!-- 
+  <servlet>
+    <servlet-name>authVerify</servlet-name>
+    <servlet-class>i5.dvita.webapplication.server.authVerify</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>authVerify</servlet-name>
+    <url-pattern>/dvita_webapplication/authverify</url-pattern>
+  </servlet-mapping>
+   -->
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <listener>
+    <listener-class>i5.dvita.webapplication.server.ConfigReader</listener-class>
+  </listener>
+
+</web-app>

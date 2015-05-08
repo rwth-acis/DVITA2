@@ -1,0 +1,7 @@
+# Module dvita_webapplication
+# RPC service class, partial path of RPC policy file
+i5.dvita.webapplication.client.DocumentService, 0E8A6382B46DBBD12A6EE6ABF7FE52AB.gwt.rpc
+i5.dvita.webapplication.client.ControlPanelService, CC346D9C1064313191958A3C9F285D1D.gwt.rpc
+i5.dvita.webapplication.client.WordService, 8F4D3445FB5D91EC74DACFA41F9405AF.gwt.rpc
+i5.dvita.webapplication.client.SetupService, 55AACE9E3232D6400D89F73B9D340F07.gwt.rpc
+i5.dvita.webapplication.client.TopicService, 63FF2A496F296A9C9A77FE819BC679B7.gwt.rpc

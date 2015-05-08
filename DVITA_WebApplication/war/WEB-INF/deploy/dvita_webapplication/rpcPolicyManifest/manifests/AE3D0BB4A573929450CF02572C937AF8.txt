@@ -1,0 +1,2 @@
+serviceClass: i5.dvita.webapplication.client.TopicService
+path: 63FF2A496F296A9C9A77FE819BC679B7.gwt.rpc

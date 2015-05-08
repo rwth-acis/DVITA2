@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="	DVITA_Commons.makejar" default="makejar" basedir=".">	
+	<target name ="makejar" description="Create a jar for the project">
+    	<jar jarfile="bin/DVITA_Commons.jar" includes="**/*.class" basedir="bin"/>
+		<copy file="bin/DVITA_Commons.jar" todir="../DVITA_DBAccess/lib" />
+		<copy file="bin/DVITA_Commons.jar" todir="../DVITA_Tools/lib" />
+		<copy file="bin/DVITA_Commons.jar" todir="../DVITA_ToolServer/lib" />
+		<copy file="bin/DVITA_Commons.jar" todir="../DVITA_WebApplication/war/WEB-INF/lib"/>
+  	</target>		
+</project>

@@ -1,0 +1,2 @@
+serviceClass: i5.dvita.webapplication.client.DocumentService
+path: 0E8A6382B46DBBD12A6EE6ABF7FE52AB.gwt.rpc

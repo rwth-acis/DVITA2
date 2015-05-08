@@ -1,0 +1,42 @@
+<!-- Rename this to your project name -->
+<project name="YOUR_PROJECT_NAME" basedir="." default="default">
+ 
+<property name="src.dir" value="src" />
+<property name="build.dir" value="war" />
+<path id="compile.classpath">
+    <fileset dir="${build.dir}/WEB-INF/lib">
+        <include name="**/*.jar" />
+        <include name="**/*.xml" />
+    </fileset>
+</path>
+	<target name="default" depends="buildwar,deploy"></target>
+ 
+<target name="gwtc" description="GWT compile to JavaScript">
+    <java failonerror="true" fork="true" classname="com.google.gwt.dev.Compiler">
+        <classpath>
+            <pathelement location="${src.dir}" />
+            <path refid="compile.classpath" />
+        </classpath>
+        <arg line="-logLevel INFO" />
+        <jvmarg value="-Xmx1024M" />
+        <!-- you can ignore this -->
+        <arg value="DVITA_WebApplication.DVITA_WebApplication" />
+    </java>
+</target>
+ 
+	<target name="buildwar">
+		<!-- Rename to whatever you like-->
+		<war basedir="war" destfile="DVita.war" webxml="war/WEB-INF/web.xml">
+			<exclude name="WEB-INF/**" />
+			<webinf dir="war/WEB-INF/">
+			 	<include name="**/*.jar" />
+				<include name="**/classes/**" />
+			</webinf>
+		</war>
+	</target>
+ 
+	<target name="deploy">
+		<!-- Use the same name again -->
+		<copy file="DVita.war" todir="." />
+	</target>
+</project>
